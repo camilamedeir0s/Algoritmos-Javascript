@@ -1,14 +1,14 @@
 <script>
-  let n = prompt("Informe a quantidade de números:");
+  let qtd_numeros = prompt("Informe a quantidade de números:");
   let numero;
   let soma = 0;
   let i = 0;
   
-  while (i < n) {
+  while (i < qtd_numeros) {
     numero = parseInt(prompt("Informe um número"));
     soma = soma + numero;
     i = i + 1;
   }
   
-  document.write("A soma dos " + n + " números é " + soma);
+  document.write("A soma dos " + qtd_numeros + " números é " + soma);
 </script>
