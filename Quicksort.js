@@ -4,9 +4,9 @@ let resultado = quickSort(vetor, 0, vetor.length - 1);
 
 console.log(resultado);
 
-function quickSort(vetor, esq, dir){
-  let i = esq;
-  let j = dir;
+function quickSort(vetor, esquerda, direita){
+  let i = esquerda;
+  let j = direita;
   let meio = Math.floor((i + j)/2);
 
   while(i < j){
@@ -29,12 +29,12 @@ function quickSort(vetor, esq, dir){
   
   let index = i;
   
-  if(index-1 > esq){
-    quickSort(vetor, esq, index-1);    
+  if(index-1 > esquerda){
+    quickSort(vetor, esquerda, index-1);    
   }
 
-  if(index < dir){
-    quickSort(vetor, index, dir);
+  if(index < direita){
+    quickSort(vetor, index, direita);
   }
   return vetor;
 }
