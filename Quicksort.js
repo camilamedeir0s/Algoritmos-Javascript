@@ -9,7 +9,7 @@ function quickSort(vetor, esquerda, direita){
   let j = direita;
   let meio = Math.floor((i + j)/2);
 
-  while(i < j){
+  while(i <= j){
     while(vetor[i] < vetor[meio]){
       i++;
     }
